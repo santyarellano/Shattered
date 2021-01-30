@@ -5,6 +5,33 @@
 
 [node name="Playground" type="Node"]
 
+<<<<<<< Updated upstream
+=======
+[node name="StaticBody2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 470.587, 578.798 )
+scale = Vector2( 30, 1 )
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 858.357, 512.381 )
+scale = Vector2( 10, 0.5 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 999.724, 586.938 )
+scale = Vector2( 2, 0.5 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 312.195, 455.761 )
+scale = Vector2( 20, 0.5 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 852.7, 373.788 )
+scale = Vector2( 10, 0.5 )
+
+[node name="StaticBody2D6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1023.78, 285.864 )
+scale = Vector2( 0.5, 18 )
+
+>>>>>>> Stashed changes
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 298.077, 204.898 )
 
