@@ -6,10 +6,10 @@
 friction = 0.9
 rough = true
 
-[sub_resource type="OccluderPolygon2D" id=3]
+[sub_resource type="OccluderPolygon2D" id=2]
 polygon = PoolVector2Array( -15.1291, -14.9512, 16.3388, -14.5706, 16.1485, 16.8973, -14.685, 16.707 )
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16.2279, 16.401 )
 
 [node name="StaticBody2D" type="StaticBody2D"]
@@ -28,10 +28,10 @@ light_mask = 2
 position = Vector2( -3.18129, -2.85278 )
 scale = Vector2( 3.8951, 3.80877 )
 z_index = -1
-occluder = SubResource( 3 )
+occluder = SubResource( 2 )
 light_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 0.51757, 0.93811 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
