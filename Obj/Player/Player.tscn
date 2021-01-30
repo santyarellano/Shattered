@@ -23,3 +23,11 @@ texture = ExtResource( 3 )
 offset = Vector2( 20, 0 )
 shadow_enabled = true
 shadow_item_cull_mask = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2( 1e-05, 1e-05 )
+current = true
+limit_bottom = 1000
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+editor_draw_limits = true
