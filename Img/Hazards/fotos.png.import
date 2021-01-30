@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uwu.png-4beff0dc05e75fc5e10504fee87ec820.stex"
+path="res://.import/fotos.png-0193e0d5e3cfbc7ac1465d546428d1ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Mensajes/uwu.png"
-dest_files=[ "res://.import/uwu.png-4beff0dc05e75fc5e10504fee87ec820.stex" ]
+source_file="res://Img/Hazards/fotos.png"
+dest_files=[ "res://.import/fotos.png-0193e0d5e3cfbc7ac1465d546428d1ab.stex" ]
 
 [params]
 

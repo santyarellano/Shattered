@@ -28,3 +28,7 @@ func _ready():
 	else:
 		$CollisionShape2D.position = Vector2(8, 39)
 	
+
+
+func _on_Messages_body_entered(body):
+	print(body.get_name())

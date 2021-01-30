@@ -1,33 +1,33 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Img/Mensajes/te amo.png" type="Texture" id=1]
-[ext_resource path="res://Img/Mensajes/me encantas.png" type="Texture" id=2]
-[ext_resource path="res://Img/Mensajes/emoji corazon.png" type="Texture" id=3]
-[ext_resource path="res://Img/Mensajes/uwu.png" type="Texture" id=4]
-[ext_resource path="res://Img/Mensajes/corazon.png" type="Texture" id=5]
-[ext_resource path="res://Img/Mensajes/te extraño.png" type="Texture" id=6]
-[ext_resource path="res://Img/Mensajes/emoji.png" type="Texture" id=7]
-[ext_resource path="res://Img/Mensajes/changos.png" type="Texture" id=8]
+[ext_resource path="res://Img/Hazards/Mensajes/corazon.png" type="Texture" id=1]
+[ext_resource path="res://Img/Hazards/Mensajes/emoji corazon.png" type="Texture" id=2]
+[ext_resource path="res://Img/Hazards/Mensajes/te amo.png" type="Texture" id=3]
+[ext_resource path="res://Img/Hazards/Mensajes/te extraño.png" type="Texture" id=4]
+[ext_resource path="res://Img/Hazards/Mensajes/emoji.png" type="Texture" id=5]
+[ext_resource path="res://Img/Hazards/Mensajes/me encantas.png" type="Texture" id=6]
+[ext_resource path="res://Img/Hazards/Mensajes/uwu.png" type="Texture" id=7]
+[ext_resource path="res://Img/Hazards/Mensajes/changos.png" type="Texture" id=8]
 [ext_resource path="res://Obj/Hazards/Messages.gd" type="Script" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "emoji",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "me_encantas",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "emoji_corazon",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "te_amo",
 "speed": 5.0
@@ -37,17 +37,17 @@ animations = [ {
 "name": "changos",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "te_extraño",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "uwu",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "corazon",
 "speed": 5.0
@@ -66,3 +66,4 @@ frames = SubResource( 1 )
 animation = "uwu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[connection signal="body_entered" from="." to="." method="_on_Messages_body_entered"]

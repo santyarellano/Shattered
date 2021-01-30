@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corazon.png-90c4738cd91c656f202007bbd41587cf.stex"
+path="res://.import/te extraño.png-6fe775ef2d46fb85d1b7a4f15fc2f8e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Mensajes/corazon.png"
-dest_files=[ "res://.import/corazon.png-90c4738cd91c656f202007bbd41587cf.stex" ]
+source_file="res://Img/Hazards/Mensajes/te extraño.png"
+dest_files=[ "res://.import/te extraño.png-6fe775ef2d46fb85d1b7a4f15fc2f8e3.stex" ]
 
 [params]
 

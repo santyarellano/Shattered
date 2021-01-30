@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/emoji.png-ddd7c63f7e771793bc7114caa724798a.stex"
+path="res://.import/uwu.png-67d97047d5deefd8649dec8a49fc624e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Mensajes/emoji.png"
-dest_files=[ "res://.import/emoji.png-ddd7c63f7e771793bc7114caa724798a.stex" ]
+source_file="res://Img/Hazards/Mensajes/uwu.png"
+dest_files=[ "res://.import/uwu.png-67d97047d5deefd8649dec8a49fc624e.stex" ]
 
 [params]
 

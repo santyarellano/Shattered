@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/changos.png-6214b7ae2d3d58926e3fe866bff443f8.stex"
+path="res://.import/regalo.png-a30ee14324248b3497fa5fefe46f5aa4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Mensajes/changos.png"
-dest_files=[ "res://.import/changos.png-6214b7ae2d3d58926e3fe866bff443f8.stex" ]
+source_file="res://Img/Hazards/regalo.png"
+dest_files=[ "res://.import/regalo.png-a30ee14324248b3497fa5fefe46f5aa4.stex" ]
 
 [params]
 

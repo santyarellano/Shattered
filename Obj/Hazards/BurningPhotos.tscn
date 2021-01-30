@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Img/Hazards/fotos.png" type="Texture" id=1]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -11,14 +11,17 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 61.8829, 73.9831 )
+extents = Vector2( 161.557, 43.6883 )
 
 [node name="BurningPhotos" type="AnimatedSprite"]
-position = Vector2( 520.906, 289.323 )
-scale = Vector2( 2.68161, 0.461141 )
+scale = Vector2( 1, 0.4 )
 frames = SubResource( 1 )
 
 [node name="FireArea" type="Area2D" parent="."]
+position = Vector2( 6.93942, 84.8116 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Trigger" type="CollisionShape2D" parent="FireArea"]
 position = Vector2( 0, -15.4905 )

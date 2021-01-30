@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/te amo.png-51d8118d29a14b185533d440ec5eb9b9.stex"
+path="res://.import/emoji corazon.png-0b62850d8e38e3827ec7b4a31c941206.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Mensajes/te amo.png"
-dest_files=[ "res://.import/te amo.png-51d8118d29a14b185533d440ec5eb9b9.stex" ]
+source_file="res://Img/Hazards/Mensajes/emoji corazon.png"
+dest_files=[ "res://.import/emoji corazon.png-0b62850d8e38e3827ec7b4a31c941206.stex" ]
 
 [params]
 
