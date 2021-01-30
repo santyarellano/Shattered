@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.9
+rough = true
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.2279, 16.401 )
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2( 17.0694, 582.093 )
+physics_material_override = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0.816742, 0.749023 )
+scale = Vector2( 0.256733, 0.262552 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.51757, 0.93811 )
+shape = SubResource( 2 )
