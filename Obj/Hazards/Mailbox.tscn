@@ -13,7 +13,6 @@ animations = [ {
 } ]
 
 [node name="Mailbox" type="AnimatedSprite"]
-position = Vector2( 628.836, 218.284 )
 scale = Vector2( 0.21467, 0.646788 )
 frames = SubResource( 1 )
 script = ExtResource( 2 )

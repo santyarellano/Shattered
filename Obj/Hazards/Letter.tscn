@@ -7,7 +7,6 @@
 extents = Vector2( 14.2551, 7.37267 )
 
 [node name="Letter" type="RigidBody2D"]
-position = Vector2( 516.046, 200.443 )
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 2 )

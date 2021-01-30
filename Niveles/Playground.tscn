@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Obj/bloque pisos/bloquepiso.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Obj/Hazards/Messages.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Obj/Hazards/Mailbox.tscn" type="PackedScene" id=5]
 
 [node name="Playground" type="Node"]
 
@@ -11,7 +13,7 @@ position = Vector2( 124.115, 439.18 )
 scale = Vector2( 7, 1 )
 
 [node name="StaticBody2D2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 819.801, 435.613 )
+position = Vector2( 880.451, 489.127 )
 scale = Vector2( 7, 1 )
 
 [node name="StaticBody2D3" parent="." instance=ExtResource( 1 )]
@@ -29,3 +31,12 @@ jump_power = -500
 [node name="BurningPhotos" parent="." instance=ExtResource( 3 )]
 position = Vector2( 479.284, 526.982 )
 scale = Vector2( 2.04984, 0.3525 )
+
+[node name="Messages" parent="." instance=ExtResource( 4 )]
+position = Vector2( 354.384, 290.167 )
+
+[node name="Messages2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 658.821, 288.977 )
+
+[node name="Mailbox" parent="." instance=ExtResource( 5 )]
+position = Vector2( 978.463, 432.341 )
