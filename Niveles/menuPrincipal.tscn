@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Niveles/buttonLarge.png" type="Texture" id=1]
 [ext_resource path="res://Niveles/Font/kenvector_future_thin.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Niveles/UI/UIbg.png" type="Texture" id=3]
+[ext_resource path="res://Niveles/Menu/menu.jpg" type="Texture" id=3]
+[ext_resource path="res://Niveles/Control.gd" type="Script" id=4]
+[ext_resource path="res://Niveles/Menu/boton.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
@@ -12,15 +14,17 @@ font_data = ExtResource( 2 )
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Fondo" type="NinePatchRect" parent="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+margin_right = 1330.0
+margin_bottom = 793.0
+rect_scale = Vector2( 0.964264, 0.903429 )
 texture = ExtResource( 3 )
-region_rect = Rect2( 19.9184, 43.2619, 118.854, 101.67 )
+region_rect = Rect2( 10.8742, 0.778534, 1242.86, 689.752 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,7 +47,7 @@ margin_right = 150.0
 margin_bottom = 45.0
 rect_min_size = Vector2( 150, 45 )
 rect_clip_content = true
-texture_normal = ExtResource( 1 )
+texture_normal = ExtResource( 5 )
 expand = true
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/Jugar"]
@@ -56,7 +60,6 @@ margin_top = -9.0
 margin_right = 26.5
 margin_bottom = 9.0
 custom_fonts/font = SubResource( 1 )
-text = "JUGAR"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -78,8 +81,11 @@ margin_left = -26.5
 margin_top = -9.0
 margin_right = 26.5
 margin_bottom = 9.0
+rect_scale = Vector2( 1.0058, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Salir"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="Control/VBoxContainer/Jugar" to="Control" method="_on_Jugar_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Salir" to="Control" method="_on_Salir_pressed"]
