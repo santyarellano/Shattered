@@ -13,6 +13,7 @@ position = Vector2( 375.584, 284.837 )
 
 [node name="background" type="Sprite" parent="."]
 modulate = Color( 0.686275, 0.243137, 0.992157, 1 )
+light_mask = 3
 position = Vector2( 518.267, 279.179 )
 scale = Vector2( 8.55536, 5.56617 )
 z_index = -1
