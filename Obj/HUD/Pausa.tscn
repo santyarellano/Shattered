@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Obj/HUD/Pruebas/black.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends CanvasLayer
+
+
+func _ready():
+	set_visible(false)
+
+#Con esta función, si se presiona la tecla escape, todos los sistemas se pausan tanto las mecánicas como el audio
+func _input(event):
+	if event.is_action_pressed(\"ui_cancel\"): #escape button by default
+		set_visible(!get_tree().paused)
+		get_tree().paused = !get_tree().paused #se para todo TODO
+
+func _on_Button_pressed():
+	get_tree().paused = false
+	set_visible(false)
+	
+func set_visible(is_visible): #Esta llama a los hijos (uno de ellos es el background de pausa) y les dice que sean visibles
+	for node in get_children():
+		node.visible = is_visible
+"
+
+[node name="CanvasLayer" type="CanvasLayer"]
+pause_mode = 2
+script = SubResource( 1 )
+
+[node name="Background" type="TextureButton" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.545098 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture_normal = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -45.0
+margin_top = -10.0
+margin_right = 45.0
+margin_bottom = 10.0
+text = "Continuar"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
