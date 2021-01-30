@@ -19,10 +19,6 @@ config/name="Pieces"
 run/main_scene="res://Niveles/menuPrincipal.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-Pausa="*res://Obj/HUD/Pausa.tscn"
-
 [display]
 
 window/size/width=1280
