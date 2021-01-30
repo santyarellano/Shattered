@@ -29,10 +29,10 @@ func _process(delta):
 			elif velocity.x > 0:
 				$AnimatedSprite.flip_h = false
 		elif velocity.x == 0:
-			$AnimatedSprite.play("hand_idle")
+			#$AnimatedSprite.play("hand_idle")
 			$AnimatedSprite.stop()
 	else:
-		$AnimatedSprite.play("hand_jump")
+		#$AnimatedSprite.play("hand_jump")
 		if velocity.x < 0:
 			$AnimatedSprite.flip_h = true
 		elif velocity.x > 0:
