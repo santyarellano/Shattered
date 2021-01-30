@@ -11,14 +11,14 @@
 [node name="background" type="Sprite" parent="."]
 modulate = Color( 0.686275, 0.243137, 0.992157, 1 )
 light_mask = 3
-position = Vector2( 630.577, 368.34 )
-scale = Vector2( 10.7034, 6.22593 )
+position = Vector2( 578.92, 355.741 )
+scale = Vector2( 13.5973, 6.02907 )
 z_index = -1
 texture = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 268.133, -9.03819 )
-jump_power = -600
+position = Vector2( 151.858, 272.875 )
+jump_power = -500
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.27451, 0.27451, 0.27451, 1 )
