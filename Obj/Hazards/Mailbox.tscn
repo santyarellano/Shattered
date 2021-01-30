@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Obj/Hazards/Mailbox.gd" type="Script" id=2]
+[ext_resource path="res://Obj/Hazards/Letter.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Mailbox" type="AnimatedSprite"]
+position = Vector2( 628.836, 218.284 )
+scale = Vector2( 0.21467, 0.646788 )
+frames = SubResource( 1 )
+script = ExtResource( 2 )
+Letter = ExtResource( 3 )
+
+[node name="LetterSpawn" type="Node2D" parent="."]
+position = Vector2( -59.7393, -29.722 )
+
+[node name="LetterTimer" type="Timer" parent="."]
+wait_time = 2.0
+[connection signal="timeout" from="LetterTimer" to="." method="_on_LetterTimer_timeout"]
