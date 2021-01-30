@@ -21,7 +21,22 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if !jumping:
+		if velocity.x != 0:
+			$AnimatedSprite.play("hand_wlk")
+			if velocity.x < 0:
+				$AnimatedSprite.flip_h = true
+			elif velocity.x > 0:
+				$AnimatedSprite.flip_h = false
+		elif velocity.x == 0:
+			$AnimatedSprite.play("hand_idle")
+			$AnimatedSprite.stop()
+	else:
+		$AnimatedSprite.play("hand_jump")
+		if velocity.x < 0:
+			$AnimatedSprite.flip_h = true
+		elif velocity.x > 0:
+			$AnimatedSprite.flip_h = false
 	
 func get_input():
 	# Walking
@@ -45,6 +60,6 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	velocity.y += gravity * delta
-	if jumping and is_on_floor():
+	if jumping and is_on_floor() && velocity.y >= 0:
 		jumping = false
 	velocity = move_and_slide(velocity, Vector2(0, -1))
