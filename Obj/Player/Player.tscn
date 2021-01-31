@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Img/PlayerAnimations/Brazo_camina/Brazo_camina_00.png" type="Texture" id=1]
 [ext_resource path="res://Obj/Player/Player.gd" type="Script" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Img/PlayerAnimations/Brazo_camina/Brazo_camina_02.png" type="Texture" id=5]
 [ext_resource path="res://Img/PlayerAnimations/Brazo_camina/Brazo_camina_03.png" type="Texture" id=6]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Obj/HUD/LifeContainer.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5.7594, 15.616 )
@@ -54,6 +55,8 @@ animation = "hand_jump"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 [editable path="Camera2D"]

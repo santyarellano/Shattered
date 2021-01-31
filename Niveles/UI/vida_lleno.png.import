@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vida lleno.png-f36815942f82aad55fdf0a0badfbc9ac.stex"
+path="res://.import/vida_lleno.png-3224db445df44b12e5095ad180937726.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Obj/HUD/Pruebas/vida lleno.png"
-dest_files=[ "res://.import/vida lleno.png-f36815942f82aad55fdf0a0badfbc9ac.stex" ]
+source_file="res://Niveles/UI/vida_lleno.png"
+dest_files=[ "res://.import/vida_lleno.png-3224db445df44b12e5095ad180937726.stex" ]
 
 [params]
 

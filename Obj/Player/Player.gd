@@ -10,17 +10,17 @@ var left = 0
 var walk_vel = 0
 var velocity = Vector2()
 var jumping = false
-
+var vida=6
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	#position.x = 400
-	#position.y = 300
+func _enter_tree():
+	#$CanvasLayer/HBoxContainer.update_health(vida)
 	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	$CanvasLayer/HBoxContainer.update_health(vida)
 	if !jumping:
 		if velocity.x != 0:
 			$AnimatedSprite.play("hand_wlk")
@@ -69,6 +69,8 @@ func dano():
 	$Timer.start()
 	bounceMail()
 	print("quitar vida")
+	vida-=1
+	#$CanvasLayer/HBoxContainer.update_health(vida)
 
 #Esta función es para que rebote si colisiona
 func bounceMail():
