@@ -72,6 +72,7 @@ func resetPlayer():
 	hide()
 	position = get_parent().get_node("PlayerSpawn").position
 	$RespawnTimer.start()
+	vida = 6
 	
 func dano():
 	set_modulate(Color(1,0.3,0.3,0.3))
@@ -79,6 +80,8 @@ func dano():
 	bounceMail()
 	print("quitar vida")
 	vida-=1
+	if(vida <= 0):
+		resetPlayer()
 	#$CanvasLayer/HBoxContainer.update_health(vida)
 
 #Esta función es para que rebote si colisiona
