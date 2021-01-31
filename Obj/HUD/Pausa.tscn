@@ -48,7 +48,7 @@ margin_left = -45.0
 margin_top = -10.0
 margin_right = 45.0
 margin_bottom = 10.0
-text = "Continuar"
+text = "Continue"
 flat = true
 __meta__ = {
 "_edit_use_anchors_": false
