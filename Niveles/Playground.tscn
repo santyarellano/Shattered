@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Obj/bloque pisos/bloquepiso.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
+
+[node name="Playground" type="Node"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 283.469, 455.829 )
+scale = Vector2( 7, 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 298.077, 204.898 )
