@@ -3,7 +3,7 @@ extends Control
 
 
 func _on_Jugar_pressed():
-	get_tree().change_scene("res://Niveles/Playground.tscn")
+	get_tree().change_scene("res://Niveles/lvl1.tscn")
 	
 
 
