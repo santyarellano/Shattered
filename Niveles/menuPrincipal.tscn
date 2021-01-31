@@ -1,6 +1,5 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Niveles/buttonLarge.png" type="Texture" id=1]
 [ext_resource path="res://Niveles/Font/kenvector_future_thin.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Niveles/Menu/menu.jpg" type="Texture" id=3]
 [ext_resource path="res://Niveles/Control.gd" type="Script" id=4]
@@ -8,6 +7,10 @@
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/buttonLarge.png-2093a246f6fa692799638f954d96b7e2.stex"
 
 [node name="Node" type="Node"]
 
@@ -69,7 +72,7 @@ margin_top = 49.0
 margin_right = 150.0
 margin_bottom = 94.0
 rect_min_size = Vector2( 150, 45 )
-texture_normal = ExtResource( 1 )
+texture_normal = SubResource( 2 )
 expand = true
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/Salir"]
