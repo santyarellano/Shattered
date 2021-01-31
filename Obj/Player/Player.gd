@@ -23,6 +23,7 @@ func _ready():
 			idle_sprt = "hand_idle"
 			walk_sprt = "hand_wlk"
 			jump_sprt = "hand_jump"
+			
 		2:
 			idle_sprt = "body_idle"
 			walk_sprt = "body_wlk"
@@ -31,7 +32,21 @@ func _ready():
 			idle_sprt = "upper_idle"
 			walk_sprt = "upper_wlk"
 			jump_sprt = "upper_jump"
+	setCollider()
 
+func setCollider():
+	match body_state:
+		1:
+			#obtener tamaño del objeto de colision
+			var size  = $AnimatedSprite.frames.get_frame($AnimatedSprite.animation, 0).get_size()
+			print(size.x)
+			
+			#crear objeto de colision
+			var shape = RectangleShape2D.new()
+			shape.extents = (Vector2(5.759, 15.616))
+			$CollisionShape2D.shape = shape
+			
+			$CollisionShape2D.position = Vector2(0, 10)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

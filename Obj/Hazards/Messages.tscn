@@ -54,7 +54,6 @@ animations = [ {
 } ]
 
 [node name="Messages" type="RigidBody2D"]
-position = Vector2( 454.51, 167.395 )
 mode = 1
 gravity_scale = 0.0
 script = ExtResource( 9 )
