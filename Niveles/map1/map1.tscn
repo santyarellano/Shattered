@@ -187,6 +187,6 @@ points = PoolVector2Array( 201.833, 58.6667, 4.33334, 58.6667, 4.33334, 1.16666,
 [node name="TileMap" type="TileMap"]
 scale = Vector2( 0.5, 0.5 )
 tile_set = SubResource( 15 )
-occluder_light_mask = -2147483648
+occluder_light_mask = -2147483646
 format = 1
 tile_data = PoolIntArray( 589828, 0, 0, 786460, 4, 0, 851992, 4, 0, 917524, 4, 0, 1048579, 4, 0, 1048585, 4, 0, 1048592, 4, 0, 1310720, 2, 0, 1310724, 1, 0, 1310731, 5, 0, 1310735, 3, 0, 1310744, 2, 0, 1310748, 5, 0, 1310752, 5, 0, 1310755, 1, 0 )

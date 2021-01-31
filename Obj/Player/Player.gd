@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 # Declare member variables here. Examples:
 export var walk_spd = 100
-export var jump_power = -100
+export var jump_power = -450
 export var gravity = 1200
 var right = 0
 var left = 0

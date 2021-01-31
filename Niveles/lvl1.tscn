@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Img/nivel 1 bkgnd/nivel1.png" type="Texture" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Obj/Player/PlayerSpawn.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Niveles/map1/map1.tscn" type="PackedScene" id=4]
 
 [sub_resource type="GDScript" id=1]
@@ -84,13 +85,14 @@ centered = false
 
 [node name="TileMap" parent="." instance=ExtResource( 4 )]
 
-[node name="Casters" type="Node2D" parent="."]
-
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1247.1, 281.966 )
+position = Vector2( 928.234, 313.944 )
 script = SubResource( 1 )
 jump_power = -400
 xend = 1275
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
+
+[node name="PlayerSpawn" parent="." instance=ExtResource( 3 )]
+position = Vector2( 932.78, 358.084 )
