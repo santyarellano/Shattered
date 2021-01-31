@@ -14,6 +14,7 @@
 [node name="Level_with_lights" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -66,7 +67,7 @@ body_state = 3
 position = Vector2( 6175.11, 717.272 )
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 327725, 12, 0, 327727, 12, 0, 393259, 12, 0, 393265, 7, 0, 458783, 2, 0, 458793, 12, 0, 458844, 3, 0, 589823, 8, 0, 524290, 9, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524317, 1, 0, 524327, 11, 0, 524343, 4, 0, 524363, 3, 0, 524370, 7, 0, 524377, 3, 0, 524383, 1, 0, 589828, 536870923, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589851, 11, 0, 589857, 4, 0, 589861, 5, 0, 589869, 3, 0, 589883, 5, 0, 589896, 3, 0, 589902, 8, 0, 589911, 5, 0, 655401, 3, 0, 655422, 4, 0, 655426, 11, 0, 655428, 11, 0, 655430, 11, 0 )
+tile_data = PoolIntArray( 327725, 12, 0, 327727, 12, 0, 393259, 12, 0, 393265, 7, 0, 458793, 12, 0, 458844, 3, 0, 589823, 8, 0, 524290, 9, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524316, 6, 0, 524319, 1, 0, 524327, 11, 0, 524343, 4, 0, 524363, 3, 0, 524370, 7, 0, 524377, 3, 0, 524383, 1, 0, 589828, 536870923, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589850, 9, 0, 589857, 4, 0, 589861, 5, 0, 589869, 3, 0, 589883, 5, 0, 589896, 3, 0, 589902, 8, 0, 589911, 5, 0, 655401, 3, 0, 655422, 4, 0, 655426, 11, 0, 655428, 11, 0, 655430, 11, 0 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
 
@@ -82,7 +83,7 @@ letter_speed = -200
 position = Vector2( 2529.42, 445.876 )
 
 [node name="Hand" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2061.1, 201.153 )
+position = Vector2( 2064.85, 379.452 )
 
 [node name="Hand2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4919.95, 337.944 )
@@ -121,7 +122,7 @@ position = Vector2( 1065.96, 628.378 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1699.96, 685.378 )
+position = Vector2( 2231.11, 557.273 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 6 )]
