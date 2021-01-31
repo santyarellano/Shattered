@@ -65,7 +65,7 @@ texture = ExtResource( 3 )
 centered = false
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 31.338, 536.748 )
+position = Vector2( 19, 432.694 )
 jump_power = -550
 body_state = 3
 
@@ -73,7 +73,7 @@ body_state = 3
 position = Vector2( 6175.11, 717.272 )
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 327725, 12, 0, 327727, 12, 0, 393259, 12, 0, 393265, 7, 0, 458783, 2, 0, 458793, 12, 0, 458844, 3, 0, 589823, 8, 0, 524290, 9, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524317, 1, 0, 524327, 11, 0, 524343, 4, 0, 524363, 3, 0, 524370, 7, 0, 524377, 3, 0, 524383, 1, 0, 589828, 536870923, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589851, 11, 0, 589857, 4, 0, 589861, 5, 0, 589869, 3, 0, 589883, 5, 0, 589896, 3, 0, 589902, 8, 0, 589911, 5, 0, 655401, 3, 0, 655422, 4, 0, 655426, 11, 0, 655428, 11, 0, 655430, 11, 0 )
+tile_data = PoolIntArray( 393265, 7, 0, 458782, 2, 0, 458799, 5, 0, 458844, 3, 0, 589823, 8, 0, 524290, 9, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524316, 1, 0, 524327, 11, 0, 524333, 5, 0, 524343, 4, 0, 524363, 3, 0, 524370, 7, 0, 524377, 3, 0, 524383, 1, 0, 589828, 536870923, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589850, 13, 0, 589857, 4, 0, 589861, 5, 0, 589865, 4, 0, 589883, 5, 0, 589896, 6, 0, 589902, 8, 0, 589911, 5, 0, 655422, 4, 0, 655427, 4, 0 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
 
@@ -82,14 +82,15 @@ position = Vector2( 539.15, 511.803 )
 letter_speed = -200
 
 [node name="Mailbox3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4516.81, 574.763 )
+position = Vector2( 4498.89, 573.601 )
 letter_speed = -200
 
 [node name="Mailbox2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2529.42, 445.876 )
+letter_speed = -200
 
 [node name="Hand" parent="." instance=ExtResource( 8 )]
-position = Vector2( 2061.1, 201.153 )
+position = Vector2( 2268.28, 394.4 )
 
 [node name="Hand2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 4919.95, 337.944 )
@@ -98,7 +99,7 @@ position = Vector2( 4919.95, 337.944 )
 position = Vector2( 1443.9, 556.498 )
 
 [node name="Gift3" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2759.26, 632.093 )
+position = Vector2( 2759.26, 559.551 )
 
 [node name="Gift4" parent="." instance=ExtResource( 9 )]
 position = Vector2( 3661.62, 493.745 )
@@ -116,8 +117,8 @@ scale = Vector2( 0.178141, 0.17838 )
 position = Vector2( 1576.64, 556.498 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3394.5, 415.932 )
-scale = Vector2( 0.456076, 0.318422 )
+position = Vector2( 3255.54, 359.3 )
+scale = Vector2( 0.240181, 0.167689 )
 
 [node name="BurningPhotos4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 934.958, 625.378 )
@@ -128,7 +129,7 @@ position = Vector2( 1065.96, 628.378 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos6" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1699.96, 685.378 )
+position = Vector2( 2073.31, 611.839 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 6 )]
@@ -136,7 +137,7 @@ position = Vector2( 3929.91, 695.425 )
 scale = Vector2( 0.456076, 0.318422 )
 
 [node name="BurningPhotos3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5104.57, 628.077 )
+position = Vector2( 5066.26, 616.495 )
 scale = Vector2( 0.243366, 0.198921 )
 
 [node name="Messages" parent="." instance=ExtResource( 7 )]
@@ -154,7 +155,7 @@ position = Vector2( 4059.14, 300.356 )
 position = Vector2( 1589.93, 311.669 )
 
 [node name="Messages4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2987.17, 119.336 )
+position = Vector2( 2984.79, 206.148 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
