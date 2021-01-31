@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Niveles/map2/map2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,9 @@
 [ext_resource path="res://Obj/Player/PlayerSpawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://music/lvl02.wav" type="AudioStream" id=5]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Obj/Hazards/Hand/Hand.tscn" type="PackedScene" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -14,6 +17,7 @@ font_data = ExtResource( 6 )
 [node name="Level_with_lights" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -108,6 +112,16 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
+position = Vector2( 199.729, 635.452 )
+scale = Vector2( 0.302681, 0.100807 )
+
+[node name="Hand" parent="." instance=ExtResource( 9 )]
+position = Vector2( 630.465, 426.337 )
+
+[node name="Gift" parent="." instance=ExtResource( 7 )]
+position = Vector2( 364.399, 637.094 )
 
 [editable path="Player"]
 

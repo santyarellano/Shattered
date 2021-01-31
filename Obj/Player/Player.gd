@@ -92,8 +92,6 @@ func resetPlayer():
 func dano():
 	set_modulate(Color(1,0.3,0.3,0.3))
 	$Timer.start()
-	bounceMail()
-	print("quitar vida")
 	vida-=1
 	if(vida <= 0):
 		resetPlayer()
@@ -101,6 +99,14 @@ func dano():
 
 #Esta función es para que rebote si colisiona
 func bounceMail():
+	velocity.y = jump_power * .7
+	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
+func bounceGift():
+	velocity.y = jump_power * .7
+	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
+func bouncePhotos():
 	velocity.y = jump_power * .7
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
