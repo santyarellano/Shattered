@@ -47,8 +47,8 @@ rare times when one has to find one's own lost pieces...
   
 
 ### **Music Team:**
-*Oswaldo Torres
-*Lucía Guerrero
+* Oswaldo Torres
+* Lucía Guerrero
   
 
 
