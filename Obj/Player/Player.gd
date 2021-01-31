@@ -65,4 +65,17 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
 func dano():
+	set_modulate(Color(1,0.3,0.3,0.3))
+	$Timer.start()
+	bounceMail()
 	print("quitar vida")
+
+#Esta función es para que rebote si colisiona
+func bounceMail():
+	velocity.y = jump_power * .7
+	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
+
+#Esta funcion es para cambiarle el color por unos segundos si colisiona con una carta(Mail)
+func _on_Timer_timeout():
+	set_modulate(Color(1,1,1,1))

@@ -1,36 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Img/nivel 1 bkgnd/nivel1.png" type="Texture" id=1]
+[ext_resource path="res://Obj/bloque pisos/bloquepiso.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Niveles/map1/map1.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Obj/Hazards/Mailbox.tscn" type="PackedScene" id=5]
 
-[node name="Level_with_lights" type="Node"]
+[node name="Playground" type="Node"]
 
-[node name="TileMap" parent="." instance=ExtResource( 4 )]
-
-[node name="Sprite" type="Sprite" parent="TileMap"]
-show_behind_parent = true
-light_mask = -2147483645
-scale = Vector2( 2, 2 )
-texture = ExtResource( 1 )
-centered = false
-
-[node name="Casters" type="Node2D" parent="."]
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 283.469, 455.829 )
+scale = Vector2( 7, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 928.211, 204.405 )
-jump_power = -500
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.27451, 0.27451, 0.27451, 1 )
-
-[node name="Gift" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1213.64, 614.677 )
-gravity_scale = 1.0
-
-[node name="Mailbox" parent="." instance=ExtResource( 5 )]
-position = Vector2( 133.643, 467.502 )
-scale = Vector2( 0.198035, 0.198035 )
-flip_h = true
+position = Vector2( 298.077, 204.898 )

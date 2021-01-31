@@ -18,7 +18,7 @@ centered = false
 [node name="Casters" type="Node2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 932.454, 235.518 )
+position = Vector2( 1225.07, 48.622 )
 jump_power = -500
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]

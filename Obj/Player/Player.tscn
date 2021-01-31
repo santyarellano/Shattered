@@ -52,4 +52,8 @@ scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
 animation = "hand_jump"
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
 [editable path="Camera2D"]
