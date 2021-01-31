@@ -46,9 +46,19 @@ animations = [ {
 "name": "body_wlk",
 "speed": 17.0
 }, {
-"frames": [ ExtResource( 12 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
-"name": "body_jump",
+"name": "hand_wlk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "hand_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "hand_jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ) ],
@@ -66,24 +76,14 @@ animations = [ {
 "name": "body_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "hand_wlk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 24 ) ],
 "loop": true,
 "name": "upper_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": true,
-"name": "hand_jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "hand_idle",
+"name": "body_jump",
 "speed": 5.0
 } ]
 
@@ -91,7 +91,6 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, 10 )
 shape = SubResource( 1 )
 
@@ -110,7 +109,7 @@ position = Vector2( 1280, 720 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
-animation = "upper_jump"
+animation = "hand_idle"
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5
