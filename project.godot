@@ -22,7 +22,6 @@ config/icon="res://icon.png"
 [autoload]
 
 Pausa="*res://Obj/HUD/Pausa.tscn"
-LifeContainer="*res://Obj/HUD/LifeContainer.tscn"
 
 [display]
 
