@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Img/nivel 1 bkgnd/nivel1.png" type="Texture" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
@@ -7,8 +7,9 @@
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://music/lvl01.wav" type="AudioStream" id=6]
 [ext_resource path="res://Niveles/lvl1.gd" type="Script" id=7]
+[ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=8]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 30
 outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
@@ -24,6 +25,8 @@ texture = ExtResource( 1 )
 centered = false
 
 [node name="TileMap" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1.68188, 0 )
+tile_data = PoolIntArray( 589828, 0, 0, 720924, 4, 0, 786456, 4, 0, 851988, 4, 0, 917520, 4, 0, 983048, 4, 0, 1048588, 4, 0, 1310720, 5, 0, 1310724, 1, 0, 1310731, 5, 0, 1310735, 3, 0, 1310744, 2, 0, 1310747, 5, 0, 1310752, 2, 0, 1310755, 1, 0 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
@@ -33,11 +36,11 @@ position = Vector2( 932.78, 358.084 )
 
 [node name="Label" type="Label" parent="."]
 light_mask = 3
-margin_left = 567.04
-margin_top = 289.843
-margin_right = 937.04
-margin_bottom = 377.843
-custom_fonts/font = SubResource( 2 )
+margin_left = 590.127
+margin_top = 227.618
+margin_right = 959.127
+margin_bottom = 308.618
+custom_fonts/font = SubResource( 1 )
 text = "Hello friend"
 align = 1
 valign = 1
@@ -47,11 +50,11 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 174.136
-margin_top = 392.431
-margin_right = 540.136
-margin_bottom = 499.431
-custom_fonts/font = SubResource( 2 )
+margin_left = 188.138
+margin_top = 309.172
+margin_right = 554.138
+margin_bottom = 416.172
+custom_fonts/font = SubResource( 1 )
 text = "You thought you'd 
 found it, right?"
 align = 1
@@ -65,7 +68,7 @@ margin_left = 938.188
 margin_top = 527.607
 margin_right = 1304.19
 margin_bottom = 634.607
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "Perhaps there's still
 way to go..."
 align = 1
@@ -80,4 +83,12 @@ volume_db = -12.345
 autoplay = true
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 931.07, 321.711 )
+position = Vector2( 934.7, 97.0518 )
+
+[node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
+position = Vector2( 73.8902, 596.856 )
+scale = Vector2( 0.475359, 0.30408 )
+
+[node name="BurningPhotos2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 891.825, 624.137 )
+scale = Vector2( 0.192323, 0.12145 )
