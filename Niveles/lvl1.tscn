@@ -6,7 +6,26 @@
 [ext_resource path="res://Niveles/map1/map1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://music/lvl01.wav" type="AudioStream" id=6]
-[ext_resource path="res://Niveles/lvl1.gd" type="Script" id=7]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+#func _ready():
+	#$AudioStreamPlayer.play()
+#	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="DynamicFont" id=2]
 size = 30
@@ -15,7 +34,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 5 )
 
 [node name="Level_with_lights" type="Node"]
-script = ExtResource( 7 )
+script = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true

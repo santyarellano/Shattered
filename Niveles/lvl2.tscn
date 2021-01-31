@@ -1,9 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Niveles/map2/map2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Img/nivel 2 bkgnd/nivel2.png" type="Texture" id=3]
 [ext_resource path="res://Obj/Player/PlayerSpawn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://music/lvl02.wav" type="AudioStream" id=5]
+[ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 6 )
 
 [node name="Level_with_lights" type="Node"]
 
@@ -35,5 +41,73 @@ tile_data = PoolIntArray( 458753, 0, 0, 458768, 3, 0, 458771, 5, 0, 458780, 6, 0
 position = Vector2( 21.5903, 551.101 )
 jump_power = -500
 
+[node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
+position = Vector2( 2550.58, 715.768 )
+
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
 position = Vector2( 177.106, 598.082 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -11.207
+autoplay = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 166.892
+margin_top = 453.799
+margin_right = 413.892
+margin_bottom = 591.799
+custom_fonts/font = SubResource( 1 )
+text = "Some days you're gonna have to cry..."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 780.535
+margin_top = 413.952
+margin_right = 1027.53
+margin_bottom = 551.952
+custom_fonts/font = SubResource( 1 )
+text = "...so you'd better dance with it"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 1337.22
+margin_top = 412.462
+margin_right = 1682.22
+margin_bottom = 550.462
+custom_fonts/font = SubResource( 1 )
+text = "There's one thing I wanna know, though"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 1977.42
+margin_top = 401.077
+margin_right = 2385.42
+margin_bottom = 539.077
+custom_fonts/font = SubResource( 1 )
+text = "What's so funny 'bout peace, love and understanding?"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[editable path="Player"]
+
+[editable path="Player/Camera2D"]
