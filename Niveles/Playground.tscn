@@ -1,13 +1,50 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Obj/bloque pisos/bloquepiso.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Obj/Hazards/Mailbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Obj/Hazards/Messages.tscn" type="PackedScene" id=6]
 
 [node name="Playground" type="Node"]
 
 [node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 283.469, 455.829 )
+position = Vector2( 116.962, 611.272 )
+scale = Vector2( 7, 1 )
+
+[node name="StaticBody2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 394.261, 648.046 )
+scale = Vector2( 7, 1 )
+
+[node name="StaticBody2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 623.853, 642.707 )
+scale = Vector2( 7, 1 )
+
+[node name="StaticBody2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 962.902, 617.345 )
+scale = Vector2( 7, 1 )
+
+[node name="StaticBody2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 797.382, 700.105 )
 scale = Vector2( 7, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 298.077, 204.898 )
+position = Vector2( 248.138, 199.51 )
+
+[node name="Gift" parent="." instance=ExtResource( 3 )]
+position = Vector2( 435.897, 612.421 )
+
+[node name="BurningPhotos" parent="." instance=ExtResource( 5 )]
+position = Vector2( 816.419, 665.121 )
+scale = Vector2( 0.456783, 0.182713 )
+
+[node name="Mailbox" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1058, 558.376 )
+scale = Vector2( 0.187147, 0.187147 )
+
+[node name="Messages" parent="." instance=ExtResource( 6 )]
+position = Vector2( 417.085, 425.494 )
+
+[node name="Messages2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 711.398, 413.721 )
