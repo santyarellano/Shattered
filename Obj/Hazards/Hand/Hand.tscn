@@ -5,7 +5,6 @@
 
 [node name="Hand" type="RigidBody2D"]
 position = Vector2( -6.24878, 20.1893 )
-mass = 65535.0
 gravity_scale = 0.0
 script = ExtResource( 1 )
 __meta__ = {

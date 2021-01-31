@@ -7,9 +7,13 @@ func _ready():
 	set_contact_monitor(true)
 	set_max_contacts_reported(3)
 	linear_velocity = Vector2(0, fall_speed)
+	
+	
+func _integrate_forces(state):
+	state.set_linear_velocity(Vector2(0, fall_speed))
 
-#func _process(delta):
-#	position.y += fall_speed * delta
+func _process(delta):
+	position.x = position.x
 
 func _on_IntervaloCaida_timeout():
 	fall_speed *= -1
@@ -17,6 +21,5 @@ func _on_IntervaloCaida_timeout():
 
 
 func _on_Hand_body_entered(body):
-	print("hola")
 	if(body.get_name() == "Player"):
 		body.resetPlayer()

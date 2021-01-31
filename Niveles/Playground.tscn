@@ -46,4 +46,5 @@ scale = Vector2( 0.448669, 0.179468 )
 
 [node name="Hand" parent="." instance=ExtResource( 7 )]
 position = Vector2( 460.73, 352.477 )
+mass = 65535.0
 fall_speed = 100
