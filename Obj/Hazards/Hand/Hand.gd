@@ -17,13 +17,21 @@ func _ready():
 func _physics_process(delta):
 	if(direction==-1):
 		#elevacion
-		ACC=1
+		ACC=0.1
 	else:
 		#caida
-		ACC=6	
+		ACC=0.3	
 	velocity.y += (ACC*direction)
-	velocity= move_and_slide(velocity,FLOOR)
-
+	var collision = move_and_collide(velocity)
+	if collision:
+		if (collision.collider.name=="Player"):
+			_on_IntervaloCaida_timeout()
+			print("Vida reducida")
+	#velocity= move_and_slide(velocity,FLOOR)
+	#for i in get_slide_count():
+	#	var collision = get_slide_collision(i)
+	#	if(collision.collider.name=="Player"):
+	#		print("game ova")
 func _on_IntervaloCaida_timeout():
 	velocity.y=0;
 	direction=direction*-1
