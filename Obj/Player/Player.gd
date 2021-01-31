@@ -103,11 +103,11 @@ func bounceMail():
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
 func bounceGift():
-	velocity.y = jump_power * .7
+	velocity.y = jump_power * .8
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
 func bouncePhotos():
-	velocity.y = jump_power * .7
+	velocity.y = jump_power * .9
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
 
