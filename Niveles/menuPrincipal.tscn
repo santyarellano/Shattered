@@ -10,7 +10,6 @@ font_data = ExtResource( 2 )
 
 [sub_resource type="StreamTexture" id=2]
 flags = 4
-load_path = "res://.import/buttonLarge.png-2093a246f6fa692799638f954d96b7e2.stex"
 
 [node name="Node" type="Node"]
 
