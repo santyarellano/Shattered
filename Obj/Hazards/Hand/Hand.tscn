@@ -5,6 +5,7 @@
 
 [node name="Hand" type="RigidBody2D"]
 position = Vector2( -6.24878, 20.1893 )
+mode = 3
 gravity_scale = 0.0
 script = ExtResource( 1 )
 __meta__ = {
@@ -16,6 +17,7 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 position = Vector2( -265.396, -94.2922 )
 scale = Vector2( 0.5, 0.5 )
 polygon = PoolVector2Array( 362.875, 352.493, 587.621, 354.741, 598.858, 333.764, 571.139, 220.268, 442.354, 237.665, 388.415, 266.133, 356.881, 323.276 )

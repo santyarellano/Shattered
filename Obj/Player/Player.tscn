@@ -34,6 +34,7 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 0, 10 )
 shape = SubResource( 1 )
 
@@ -57,9 +58,10 @@ animation = "hand_jump"
 wait_time = 0.5
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
 [node name="RespawnTimer" type="Timer" parent="."]
 one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="RespawnTimer" to="." method="_on_RespawnTimer_timeout"]
 
 [editable path="Camera2D"]

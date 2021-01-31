@@ -89,7 +89,8 @@ centered = false
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1247.1, 281.966 )
 script = SubResource( 1 )
+jump_power = -400
 xend = 1275
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.27451, 0.27451, 0.27451, 1 )
+color = Color( 0, 0, 0, 1 )
