@@ -68,6 +68,11 @@ tile_data = PoolIntArray( 327725, 12, 0, 327727, 12, 0, 393259, 12, 0, 393265, 7
 
 [node name="Mailbox" parent="." instance=ExtResource( 5 )]
 position = Vector2( 539.15, 511.803 )
+letter_speed = -200
+
+[node name="Mailbox3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 4516.81, 574.763 )
+letter_speed = -200
 
 [node name="Mailbox2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 2529.42, 445.876 )
@@ -75,8 +80,26 @@ position = Vector2( 2529.42, 445.876 )
 [node name="Hand" parent="." instance=ExtResource( 8 )]
 position = Vector2( 2061.1, 201.153 )
 
+[node name="Hand2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4919.95, 337.944 )
+
 [node name="Gift" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1443.9, 556.498 )
+
+[node name="Gift3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2759.26, 632.093 )
+
+[node name="Gift4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3661.62, 493.745 )
+scale = Vector2( 0.178141, 0.17838 )
+
+[node name="Gift5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 4131.3, 621.95 )
+scale = Vector2( 0.178141, 0.17838 )
+
+[node name="Gift6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5512.48, 566.031 )
+scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1576.64, 556.498 )
@@ -84,6 +107,18 @@ position = Vector2( 1576.64, 556.498 )
 [node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3394.5, 415.932 )
 scale = Vector2( 0.456076, 0.318422 )
+
+[node name="BurningPhotos4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 934.958, 625.378 )
+scale = Vector2( 0.238236, 0.166331 )
+
+[node name="BurningPhotos5" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1065.96, 628.378 )
+scale = Vector2( 0.238236, 0.166331 )
+
+[node name="BurningPhotos6" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1699.96, 685.378 )
+scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 3929.91, 695.425 )
@@ -102,4 +137,10 @@ position = Vector2( 4278.41, 266.946 )
 scale = Vector2( 0.243366, 0.198921 )
 
 [node name="Messages2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4064.8, 342.782 )
+position = Vector2( 4059.14, 300.356 )
+
+[node name="Messages5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 1589.93, 311.669 )
+
+[node name="Messages4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2987.17, 119.336 )

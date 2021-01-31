@@ -6,7 +6,7 @@
 [ext_resource path="res://Niveles/map1/map1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://music/lvl01.wav" type="AudioStream" id=6]
-[ext_resource path="res://Niveles/lvl1.gd" type="Script" id=7]
+[ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
@@ -16,7 +16,6 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 5 )
 
 [node name="Level_with_lights" type="Node"]
-script = ExtResource( 7 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
@@ -83,12 +82,20 @@ volume_db = -12.345
 autoplay = true
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 934.7, 97.0518 )
+position = Vector2( 958.324, 298.716 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
 position = Vector2( 73.8902, 596.856 )
 scale = Vector2( 0.475359, 0.30408 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 891.825, 624.137 )
-scale = Vector2( 0.192323, 0.12145 )
+position = Vector2( 913.321, 630.41 )
+scale = Vector2( 0.122231, 0.086498 )
+
+[node name="Gift" parent="." instance=ExtResource( 7 )]
+position = Vector2( 598.471, 625.139 )
+scale = Vector2( 0.128557, 0.14602 )
+
+[node name="Gift2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 295.029, 464.658 )
+scale = Vector2( 0.128557, 0.14602 )
