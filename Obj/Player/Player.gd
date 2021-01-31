@@ -3,7 +3,7 @@ extends KinematicBody2D
 
 # Declare member variables here. Examples:
 export var walk_spd = 100
-export var jump_power = -300
+export var jump_power = -100
 export var gravity = 1200
 var right = 0
 var left = 0
@@ -29,10 +29,10 @@ func _process(delta):
 			elif velocity.x > 0:
 				$AnimatedSprite.flip_h = false
 		elif velocity.x == 0:
-			#$AnimatedSprite.play("hand_idle")
+			$AnimatedSprite.play("hand_idle")
 			$AnimatedSprite.stop()
 	else:
-		#$AnimatedSprite.play("hand_jump")
+		$AnimatedSprite.play("hand_jump")
 		if velocity.x < 0:
 			$AnimatedSprite.flip_h = true
 		elif velocity.x > 0:

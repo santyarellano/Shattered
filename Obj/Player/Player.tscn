@@ -17,6 +17,16 @@ animations = [ {
 "loop": true,
 "name": "hand_wlk",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "hand_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "hand_idle",
+"speed": 5.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
@@ -40,6 +50,6 @@ position = Vector2( 1280, 720 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.25, 0.25 )
 frames = SubResource( 2 )
-animation = "hand_wlk"
+animation = "hand_jump"
 
 [editable path="Camera2D"]
