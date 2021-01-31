@@ -40,6 +40,7 @@ tile_data = PoolIntArray( 458753, 0, 0, 458768, 3, 0, 458771, 5, 0, 458780, 6, 0
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 21.5903, 551.101 )
 jump_power = -500
+body_state = 2
 
 [node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
 position = Vector2( 2550.58, 715.768 )

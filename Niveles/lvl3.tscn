@@ -62,6 +62,7 @@ centered = false
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 95.9648, 408.24 )
 jump_power = -650
+body_state = 3
 
 [node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
 position = Vector2( 6177.12, 717.248 )
