@@ -13,4 +13,4 @@ func _on_Letter_body_entered(body):
 	if(body.get_name() == "Player"):
 		body.dano()
 		
-	queue_free()
+#	queue_free()

@@ -37,6 +37,10 @@ func _process(delta):
 			$AnimatedSprite.flip_h = true
 		elif velocity.x > 0:
 			$AnimatedSprite.flip_h = false
+			
+	#checar caida
+	if(position.y >= 750):
+		resetPlayer()
 	
 func get_input():
 	# Walking
@@ -64,5 +68,14 @@ func _physics_process(delta):
 		jumping = false
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
+func resetPlayer():
+	hide()
+	position = get_parent().get_node("PlayerSpawn").position
+	$RespawnTimer.start()
+	
 func dano():
 	print("quitar vida")
+
+
+func _on_RespawnTimer_timeout():
+	show()
