@@ -73,7 +73,7 @@ body_state = 3
 position = Vector2( 6175.11, 717.272 )
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 393265, 7, 0, 458782, 2, 0, 458799, 5, 0, 458844, 3, 0, 589823, 8, 0, 524290, 9, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524316, 1, 0, 524327, 11, 0, 524333, 5, 0, 524343, 4, 0, 524363, 3, 0, 524370, 7, 0, 524377, 3, 0, 524383, 1, 0, 589828, 536870923, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589850, 13, 0, 589857, 4, 0, 589861, 5, 0, 589865, 4, 0, 589883, 5, 0, 589896, 6, 0, 589902, 8, 0, 589911, 5, 0, 655422, 4, 0, 655427, 4, 0 )
+tile_data = PoolIntArray( 393265, 7, 0, 458782, 2, 0, 458799, 5, 0, 458846, 2, 0, 589823, 8, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524316, 1, 0, 524327, 11, 0, 524333, 5, 0, 524343, 4, 0, 524362, 3, 0, 524369, 7, 0, 524376, 3, 0, 524379, 3, 0, 589827, 3, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589850, 1, 0, 589857, 4, 0, 589861, 5, 0, 589865, 4, 0, 589883, 5, 0, 589895, 6, 0, 589901, 8, 0, 589910, 5, 0, 655422, 4, 0, 655426, 4, 0 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
 
@@ -82,7 +82,7 @@ position = Vector2( 539.15, 511.803 )
 letter_speed = -200
 
 [node name="Mailbox3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 4498.89, 573.601 )
+position = Vector2( 4429.8, 575.291 )
 letter_speed = -200
 
 [node name="Mailbox2" parent="." instance=ExtResource( 5 )]
@@ -93,7 +93,7 @@ letter_speed = -200
 position = Vector2( 2268.28, 394.4 )
 
 [node name="Hand2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4919.95, 337.944 )
+position = Vector2( 4859.37, 333.615 )
 
 [node name="Gift" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1443.9, 556.498 )
@@ -110,15 +110,15 @@ position = Vector2( 4131.3, 621.95 )
 scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift6" parent="." instance=ExtResource( 9 )]
-position = Vector2( 5512.48, 566.031 )
-scale = Vector2( 0.178141, 0.17838 )
+position = Vector2( 5324.62, 493.745 )
+scale = Vector2( 0.139004, 0.13919 )
 
 [node name="Gift2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1576.64, 556.498 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
-position = Vector2( 3255.54, 359.3 )
-scale = Vector2( 0.240181, 0.167689 )
+position = Vector2( 3244.23, 365.354 )
+scale = Vector2( 0.174245, 0.121654 )
 
 [node name="BurningPhotos4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 934.958, 625.378 )
@@ -137,8 +137,8 @@ position = Vector2( 3929.91, 695.425 )
 scale = Vector2( 0.456076, 0.318422 )
 
 [node name="BurningPhotos3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 5066.26, 616.495 )
-scale = Vector2( 0.243366, 0.198921 )
+position = Vector2( 4946.06, 636.908 )
+scale = Vector2( 0.177209, 0.115958 )
 
 [node name="Messages" parent="." instance=ExtResource( 7 )]
 position = Vector2( 4278.41, 266.946 )
