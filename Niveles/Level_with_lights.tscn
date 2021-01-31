@@ -7,10 +7,12 @@
 [node name="Level_with_lights" type="Node"]
 
 [node name="TileMap" parent="." instance=ExtResource( 4 )]
+visible = false
 
 [node name="Sprite" type="Sprite" parent="TileMap"]
 show_behind_parent = true
 light_mask = -2147483645
+position = Vector2( 0, -5.65674 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 centered = false
