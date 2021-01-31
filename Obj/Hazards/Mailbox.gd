@@ -1,6 +1,7 @@
 extends AnimatedSprite
 
 export (PackedScene) var Letter
+export var letter_speed = 200
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,4 +15,4 @@ func _on_LetterTimer_timeout():
 	
 	letter.position = $LetterSpawn.position
 	
-	letter.linear_velocity = Vector2(-letter.speed, 0)
+	letter.linear_velocity = Vector2(letter_speed, 0)

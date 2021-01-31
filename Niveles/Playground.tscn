@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Obj/bloque pisos/bloquepiso.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Obj/Hazards/Mailbox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Obj/Hazards/Hand/Hand.tscn" type="PackedScene" id=7]
+
+[node name="Playground" type="Node"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 283.469, 455.829 )
+scale = Vector2( 7, 1 )
+
+[node name="PlayerSpawn" type="Node2D" parent="."]
+position = Vector2( 936.105, 307.934 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.27451, 0.27451, 0.27451, 1 )
+
+[node name="Gift" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1213.64, 614.677 )
+gravity_scale = 1.0
+
+[node name="Mailbox" parent="." instance=ExtResource( 5 )]
+position = Vector2( 133.643, 467.502 )
+scale = Vector2( 0.198035, 0.198035 )
+flip_h = true
+
+[node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
+position = Vector2( 575.573, 613.551 )
+scale = Vector2( 0.448669, 0.179468 )
+
+[node name="Hand" parent="." instance=ExtResource( 7 )]
+position = Vector2( 456.235, 350.979 )
+mass = 65535.0
+fall_speed = 100

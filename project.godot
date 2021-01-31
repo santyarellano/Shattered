@@ -15,13 +15,14 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Pieces"
+config/name="Shattered"
 run/main_scene="res://Niveles/menuPrincipal.tscn"
-config/icon="res://icon.png"
+config/icon="res://Img/PlayerAnimations/icon.png"
 
 [autoload]
 
 Pausa="*res://Obj/HUD/Pausa.tscn"
+LifeContainer="*res://Obj/HUD/LifeContainer.tscn"
 
 [display]
 
