@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Niveles/map3/mapa3.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,13 @@
 [ext_resource path="res://Obj/Hazards/Hand/Hand.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=9]
 [ext_resource path="res://music/lvl03.wav" type="AudioStream" id=10]
+[ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+outline_size = 2
+outline_color = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+font_data = ExtResource( 11 )
 
 [node name="Level_with_lights" type="Node"]
 
@@ -153,6 +160,75 @@ position = Vector2( 2987.17, 119.336 )
 stream = ExtResource( 10 )
 volume_db = -13.897
 autoplay = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 786.118
+margin_top = 359.28
+margin_right = 1073.12
+margin_bottom = 450.28
+custom_fonts/font = SubResource( 1 )
+text = "I know it's hard to keep an open heart"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1372.16
+margin_top = 372.517
+margin_right = 1659.16
+margin_bottom = 510.517
+custom_fonts/font = SubResource( 1 )
+text = "Just try to hang around and see what lies above"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 2117.03
+margin_top = 396.813
+margin_right = 2452.03
+margin_bottom = 534.813
+custom_fonts/font = SubResource( 1 )
+text = "You wanna be there,
+you wanna see that"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 3803.8
+margin_top = 381.212
+margin_right = 4429.8
+margin_bottom = 519.212
+custom_fonts/font = SubResource( 1 )
+text = "Just try to piece together conversations."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 5697.23
+margin_top = 264.136
+margin_right = 6155.23
+margin_bottom = 402.136
+custom_fonts/font = SubResource( 1 )
+text = "At the end you won't be just trying to pretend."
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [editable path="Player"]
 
