@@ -14,6 +14,7 @@ script = ExtResource( 2 )
 [node name="DamageArea" type="Area2D" parent="."]
 
 [node name="Trigger" type="CollisionShape2D" parent="DamageArea"]
+visible = false
 position = Vector2( -84.1845, 51.9139 )
 shape = SubResource( 1 )
 [connection signal="body_entered" from="DamageArea" to="." method="_on_DamageArea_body_entered"]

@@ -12,11 +12,6 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 5 ) ],
-"loop": true,
-"name": "emoji",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "emoji_corazon",
@@ -25,11 +20,6 @@ animations = [ {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "corazon",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "te_extraño",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ) ],
@@ -42,14 +32,24 @@ animations = [ {
 "name": "te_amo",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "me_encantas",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "te_extraño",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "uwu",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "me_encantas",
+"name": "emoji",
 "speed": 5.0
 } ]
 
@@ -66,4 +66,5 @@ frames = SubResource( 1 )
 animation = "uwu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 [connection signal="body_entered" from="." to="." method="_on_Messages_body_entered"]

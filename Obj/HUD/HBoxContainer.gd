@@ -15,7 +15,7 @@ func _ready():
 	
 func update_health(value):
 	for i in get_child_count():
-		print(get_child_count())
+		#print(get_child_count())
 		if value > i * 2 + 1:
 			get_child(i).texture = heart_full
 		elif value > i * 2:
