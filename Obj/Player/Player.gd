@@ -5,6 +5,7 @@ extends KinematicBody2D
 export var walk_spd = 100
 export var jump_power = -100
 export var gravity = 1200
+export var xend = 2375
 var right = 0
 var left = 0
 var walk_vel = 0
@@ -16,6 +17,7 @@ var jumping = false
 func _ready():
 	#position.x = 400
 	#position.y = 300
+	get_node("Camera2D")._param(xend)
 	pass
 
 

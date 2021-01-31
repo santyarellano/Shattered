@@ -1,25 +1,95 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Img/nivel 1 bkgnd/nivel1.png" type="Texture" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Niveles/map1/map1.tscn" type="PackedScene" id=4]
 
+[sub_resource type="GDScript" id=1]
+script/source = "extends KinematicBody2D
+
+
+# Declare member variables here. Examples:
+export var walk_spd = 100
+export var jump_power = -100
+export var gravity = 1200
+export var xend = 2375
+var right = 0
+var left = 0
+var walk_vel = 0
+var velocity = Vector2()
+var jumping = false
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	#position.x = 400
+	#position.y = 300
+	get_node(\"Camera2D\")._param(xend)
+	pass
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if !jumping:
+		if velocity.x != 0:
+			$AnimatedSprite.play(\"hand_wlk\")
+			if velocity.x < 0:
+				$AnimatedSprite.flip_h = true
+			elif velocity.x > 0:
+				$AnimatedSprite.flip_h = false
+		elif velocity.x == 0:
+			$AnimatedSprite.play(\"hand_idle\")
+			$AnimatedSprite.stop()
+	else:
+		$AnimatedSprite.play(\"hand_jump\")
+		if velocity.x < 0:
+			$AnimatedSprite.flip_h = true
+		elif velocity.x > 0:
+			$AnimatedSprite.flip_h = false
+	
+func get_input():
+	# Walking
+	if Input.is_action_pressed(\"ui_right\"):
+		right = 1
+	else:
+		right = 0
+		
+	if Input.is_action_pressed(\"ui_left\"):
+		left = 1
+	else:
+		left = 0
+		
+	var jump_key = Input.is_action_just_pressed(\"ui_select\")
+	if jump_key and is_on_floor():
+		jumping = true
+		velocity.y = jump_power
+		
+	velocity.x = walk_spd*(right - left)
+	
+func _physics_process(delta):
+	get_input()
+	velocity.y += gravity * delta
+	if jumping and is_on_floor() && velocity.y >= 0:
+		jumping = false
+	velocity = move_and_slide(velocity, Vector2(0, -1))
+"
+
 [node name="Level_with_lights" type="Node"]
 
-[node name="TileMap" parent="." instance=ExtResource( 4 )]
-
-[node name="Sprite" type="Sprite" parent="TileMap"]
+[node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
 light_mask = -2147483645
-scale = Vector2( 2, 2 )
 texture = ExtResource( 1 )
 centered = false
+
+[node name="TileMap" parent="." instance=ExtResource( 4 )]
 
 [node name="Casters" type="Node2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 932.454, 235.518 )
-jump_power = -500
+position = Vector2( 1247.1, 281.966 )
+script = SubResource( 1 )
+xend = 1275
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.27451, 0.27451, 0.27451, 1 )
