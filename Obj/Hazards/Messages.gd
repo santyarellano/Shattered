@@ -5,7 +5,7 @@ extends RigidBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	get_tree().set_debug_collisions_hint(true)
+	#get_tree().set_debug_collisions_hint(true)
 	var messages = $AnimatedSprite.frames.get_animation_names()
 	$AnimatedSprite.animation = messages[randi() % messages.size()]
 	
