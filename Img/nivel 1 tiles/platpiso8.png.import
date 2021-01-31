@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/buttonLarge.png-2093a246f6fa692799638f954d96b7e2.stex"
+path="res://.import/platpiso8.png-cfdd7faa63efdbdf5ffaad82f8c5e38f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Niveles/buttonLarge.png"
-dest_files=[ "res://.import/buttonLarge.png-2093a246f6fa692799638f954d96b7e2.stex" ]
+source_file="res://Img/nivel 1 tiles/platpiso8.png"
+dest_files=[ "res://.import/platpiso8.png-cfdd7faa63efdbdf5ffaad82f8c5e38f.stex" ]
 
 [params]
 
