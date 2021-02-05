@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Niveles/map3/mapa3.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=9]
 [ext_resource path="res://music/lvl03.wav" type="AudioStream" id=10]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Obj/Final/nivel6.png" type="Texture" id=12]
+[ext_resource path="res://Obj/Final/Level3/TSlvl3.tres" type="TileSet" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -21,38 +23,22 @@ font_data = ExtResource( 11 )
 [node name="Level_with_lights" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
 light_mask = 3
 z_as_relative = false
-texture = ExtResource( 3 )
+texture = ExtResource( 12 )
 centered = false
 
 [node name="Sprite2" type="Sprite" parent="."]
 show_behind_parent = true
 light_mask = 3
-position = Vector2( 1280, 0 )
+position = Vector2( 1280.78, 0.309814 )
 z_as_relative = false
-texture = ExtResource( 3 )
-centered = false
-flip_h = true
-
-[node name="Sprite3" type="Sprite" parent="."]
-show_behind_parent = true
-light_mask = 3
-position = Vector2( 2559.08, 0.0397949 )
-z_as_relative = false
-texture = ExtResource( 3 )
-centered = false
-
-[node name="Sprite4" type="Sprite" parent="."]
-show_behind_parent = true
-light_mask = 3
-position = Vector2( 3838.69, 0.641846 )
-z_as_relative = false
-texture = ExtResource( 3 )
+texture = ExtResource( 12 )
 centered = false
 flip_h = true
 
@@ -69,13 +55,25 @@ position = Vector2( 19, 432.694 )
 jump_power = -550
 body_state = 3
 
+[node name="Light2D" parent="Player" index="1"]
+position = Vector2( 612.37, -351.742 )
+
+[node name="Camera2D" parent="Player" index="2"]
+position = Vector2( 625.083, -349.623 )
+
 [node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
 position = Vector2( 6175.11, 717.272 )
 
+[node name="AnimatedSprite" parent="Player" index="3"]
+position = Vector2( 627.202, -379.288 )
+
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_data = PoolIntArray( 393265, 7, 0, 458782, 2, 0, 458799, 5, 0, 458846, 2, 0, 589823, 8, 0, 524294, 536870923, 0, 524298, 6, 0, 524301, 9, 0, 524307, 9, 0, 524316, 1, 0, 524327, 11, 0, 524333, 5, 0, 524343, 4, 0, 524362, 3, 0, 524369, 7, 0, 524376, 3, 0, 524379, 3, 0, 589827, 3, 0, 589832, 536870923, 0, 589839, 9, 0, 589841, 2, 0, 589845, 0, 0, 589850, 1, 0, 589857, 4, 0, 589861, 5, 0, 589865, 4, 0, 589883, 5, 0, 589895, 6, 0, 589901, 8, 0, 589910, 5, 0, 655422, 4, 0, 655426, 4, 0 )
+tile_set = ExtResource( 13 )
+cell_size = Vector2( 32, 32 )
+tile_data = PoolIntArray( 262163, 3, 0, 327711, 3, 0, 393242, 2, 0, 458775, 1, 0, 655393, 4, 0, 786460, 5, 0, 917529, 6, 0, 1179677, 7, 0 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
+position = Vector2( 647.26, 71.0598 )
 
 [node name="Mailbox" parent="." instance=ExtResource( 5 )]
 position = Vector2( 539.15, 511.803 )

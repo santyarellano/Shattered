@@ -1,9 +1,5 @@
 extends Area2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 export var destination = 2
 export var lvl_item = 2
 
