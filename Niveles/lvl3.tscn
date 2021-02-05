@@ -86,27 +86,26 @@ tile_data = PoolIntArray( 196673, 2, 0, 196679, 3, 0, 262178, 5, 0, 262206, 1, 0
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
 
 [node name="Mailbox" parent="." instance=ExtResource( 5 )]
-visible = false
-position = Vector2( 539.15, 511.803 )
+position = Vector2( 1314.67, 348.381 )
+scale = Vector2( 0.169808, 0.169808 )
+flip_h = true
 letter_speed = -200
 
 [node name="Mailbox3" parent="." instance=ExtResource( 5 )]
-visible = false
-position = Vector2( 4429.8, 575.291 )
+position = Vector2( 2296.4, 60.938 )
+scale = Vector2( 0.176846, 0.176846 )
 letter_speed = -200
 
 [node name="Mailbox2" parent="." instance=ExtResource( 5 )]
-visible = false
-position = Vector2( 2529.42, 445.876 )
+position = Vector2( 1128.12, 633.648 )
+scale = Vector2( 0.155691, 0.155691 )
 letter_speed = -200
 
 [node name="Hand" parent="." instance=ExtResource( 8 )]
-visible = false
-position = Vector2( 2268.28, 394.4 )
+position = Vector2( 1863.82, -1.57974 )
 
 [node name="Hand2" parent="." instance=ExtResource( 8 )]
-visible = false
-position = Vector2( 4859.37, 333.615 )
+position = Vector2( 709.401, 2.76624 )
 
 [node name="Gift" parent="." instance=ExtResource( 9 )]
 visible = false
@@ -117,23 +116,19 @@ visible = false
 position = Vector2( 2759.26, 559.551 )
 
 [node name="Gift4" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 3661.62, 493.745 )
+position = Vector2( 1460.79, 429.457 )
 scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift5" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 4131.3, 621.95 )
+position = Vector2( 1188.17, 110.502 )
 scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift6" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 5324.62, 493.745 )
+position = Vector2( 2258.99, 242.944 )
 scale = Vector2( 0.139004, 0.13919 )
 
 [node name="Gift2" parent="." instance=ExtResource( 9 )]
-visible = false
-position = Vector2( 1576.64, 556.498 )
+position = Vector2( 1077.4, 470.778 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
 visible = false
@@ -146,23 +141,20 @@ position = Vector2( 934.958, 625.378 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos5" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 1065.96, 628.378 )
+position = Vector2( 1342.17, 677.587 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos6" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 2073.31, 611.839 )
-scale = Vector2( 0.238236, 0.166331 )
+position = Vector2( 1995.89, 662.175 )
+scale = Vector2( 0.147463, 0.102955 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 6 )]
-visible = false
-position = Vector2( 3929.91, 695.425 )
-scale = Vector2( 0.456076, 0.318422 )
+position = Vector2( 2396.79, 245.915 )
+scale = Vector2( 0.154922, 0.108163 )
 
 [node name="BurningPhotos3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 4946.06, 636.908 )
-scale = Vector2( 0.177209, 0.115958 )
+position = Vector2( 696.901, 336.859 )
+scale = Vector2( 0.174573, 0.114233 )
 
 [node name="Messages" parent="." instance=ExtResource( 7 )]
 position = Vector2( 2154.49, 623.708 )
@@ -215,10 +207,10 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 1514.93
-margin_top = 262.031
-margin_right = 1826.93
-margin_bottom = 447.031
+margin_left = 1510.77
+margin_top = 263.815
+margin_right = 1822.77
+margin_bottom = 448.815
 custom_fonts/font = SubResource( 1 )
 text = "You wanna be there,
 you wanna see that"
@@ -244,10 +236,10 @@ __meta__ = {
 }
 
 [node name="Label5" type="Label" parent="."]
-margin_left = 2316.58
-margin_top = 362.728
-margin_right = 2577.58
-margin_bottom = 547.728
+margin_left = 2296.78
+margin_top = 359.9
+margin_right = 2557.78
+margin_bottom = 544.9
 custom_fonts/font = SubResource( 1 )
 text = "At the end you won't be just trying to pretend."
 align = 1
