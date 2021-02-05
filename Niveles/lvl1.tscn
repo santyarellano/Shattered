@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Img/nivel 1 bkgnd/nivel1.png" type="Texture" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Obj/Hazards/BurningPhotos.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Obj/trigger Nivel 2.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Obj/Final/TSlvl1/lvl1.tres" type="TileSet" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -26,20 +27,23 @@ centered = false
 
 [node name="TileMap" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1.68188, 0 )
-tile_data = PoolIntArray( 589828, 0, 0, 720924, 4, 0, 786456, 4, 0, 851988, 4, 0, 917520, 4, 0, 983048, 4, 0, 1048588, 4, 0, 1310720, 5, 0, 1310724, 1, 0, 1310731, 5, 0, 1310735, 3, 0, 1310744, 2, 0, 1310747, 5, 0, 1310752, 2, 0, 1310755, 1, 0 )
+scale = Vector2( 1, 1 )
+tile_set = ExtResource( 10 )
+cell_size = Vector2( 32, 32 )
+tile_data = PoolIntArray( 196610, 0, 0, 196646, 22, 0, 327714, 21, 0, 393223, 1, 0, 393247, 9, 0, 458770, 9, 0, 524300, 2, 0, 524317, 9, 0, 589846, 19, 0, 655393, 17, 0, 786437, 9, 0, 786450, 9, 0, 851976, 4, 0, 917532, 13, 0, 983065, 12, 0, 1114133, 10, 0, 1179682, 15, 0, 1310722, 6, 0, 1310731, 8, 0, 1310747, 14, 0, 1310756, 16, 0, 1376264, 7, 0, 1376280, 11, 0 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0, 0, 0, 1 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 3 )]
-position = Vector2( 932.78, 358.084 )
+position = Vector2( 123.554, 16.2112 )
 
 [node name="Label" type="Label" parent="."]
 light_mask = 3
-margin_left = 590.127
-margin_top = 227.618
-margin_right = 959.127
-margin_bottom = 308.618
+margin_left = 183.133
+margin_top = 64.4841
+margin_right = 552.133
+margin_bottom = 145.484
 custom_fonts/font = SubResource( 1 )
 text = "Hello friend"
 align = 1
@@ -50,10 +54,10 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 188.138
-margin_top = 309.172
-margin_right = 554.138
-margin_bottom = 416.172
+margin_left = 870.634
+margin_top = 39.5014
+margin_right = 1142.63
+margin_bottom = 130.501
 custom_fonts/font = SubResource( 1 )
 text = "You thought you'd 
 found it, right?"
@@ -64,10 +68,11 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 819.822
-margin_top = 463.18
-margin_right = 1185.82
-margin_bottom = 570.18
+margin_left = 937.727
+margin_top = 362.59
+margin_right = 1237.73
+margin_bottom = 453.59
+rect_rotation = 360.0
 custom_fonts/font = SubResource( 1 )
 text = "Perhaps there's still
 way to go..."
@@ -83,24 +88,32 @@ volume_db = -12.345
 autoplay = true
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 920.866, 290.475 )
+position = Vector2( 127.329, -22.8034 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
-position = Vector2( 73.8902, 596.856 )
-scale = Vector2( 0.475359, 0.30408 )
+position = Vector2( 959.205, 629.673 )
+scale = Vector2( 0.133356, 0.0881222 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 913.321, 630.41 )
-scale = Vector2( 0.122231, 0.086498 )
+position = Vector2( 350.755, 402.192 )
+scale = Vector2( 0.135852, 0.109338 )
 
 [node name="Gift" parent="." instance=ExtResource( 7 )]
-position = Vector2( 598.471, 625.139 )
+position = Vector2( 503.864, 624.685 )
 scale = Vector2( 0.128557, 0.14602 )
 
 [node name="Gift2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 295.029, 464.658 )
+position = Vector2( 458.445, 240.878 )
+scale = Vector2( 0.128557, 0.14602 )
+
+[node name="Gift3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 797.953, 272.685 )
 scale = Vector2( 0.128557, 0.14602 )
 
 [node name="Area2D" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1227.97, 580.175 )
+position = Vector2( 127.423, 577.023 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 1123.54, 520.9 )
 scale = Vector2( 0.5, 0.5 )

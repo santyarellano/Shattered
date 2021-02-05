@@ -1,8 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Niveles/map2/map2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Obj/Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Img/nivel 2 bkgnd/nivel2.png" type="Texture" id=3]
+[ext_resource path="res://Obj/Final/nivel3.png" type="Texture" id=3]
 [ext_resource path="res://Obj/Player/PlayerSpawn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://music/lvl02.wav" type="AudioStream" id=5]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=6]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Obj/Hazards/Hand/Hand.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Obj/Hazards/Messages.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Obj/trigger Nivel 2.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Obj/Final/TSlvl2.tres" type="TileSet" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -19,6 +20,7 @@ font_data = ExtResource( 6 )
 [node name="Level_with_lights" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -35,17 +37,22 @@ position = Vector2( 1273.62, 0.200195 )
 z_as_relative = false
 texture = ExtResource( 3 )
 centered = false
+flip_h = true
 
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
 position = Vector2( -64.7062, 360.588 )
-scale = Vector2( 0.5, 0.5 )
+tile_set = ExtResource( 12 )
+cell_size = Vector2( 32, 32 )
 collision_layer = 2147483649
-tile_data = PoolIntArray( 458753, 0, 0, 458768, 3, 0, 458771, 5, 0, 458780, 6, 0, 458797, 4, 0, 458801, 4, 0, 458806, 7, 0, 458816, 3, 0, 458820, 7, 0, 524327, 6, 0, 589830, 1, 0, 589836, 2, 0, 589856, 1, 0 )
+tile_data = PoolIntArray( -327615, 13, 0, -196548, 19, 0, -196546, 536870931, 0, -196537, 14, 0, -131040, 9, 0, -130999, 14, 0, -65479, 18, 0, -65478, 18, 0, -65461, 14, 0, 28, 8, 0, 65571, 9, 0, 65579, 17, 0, 65588, 15, 0, 65613, 15, 0, 131095, 7, 0, 131119, 14, 0, 131137, 10, 0, 196628, 6, 0, 196658, 14, 0, 262158, 4, 0, 262162, 5, 0, 327724, 13, 0, 327739, 15, 0, 393229, 3, 0, 393256, 9, 0, 458754, 0, 0, 458783, 11, 0, 458817, 13, 0, 458831, 0, 0, 524299, 2, 0, 524307, 12, 0, 524359, 12, 0, 589830, 1, 0, 589878, 1, 0, 655421, 11, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 32.0767, 528.344 )
 jump_power = -500
 body_state = 2
+
+[node name="Light2D" parent="Player" index="1"]
+position = Vector2( 1.25992, 2.51984 )
 
 [node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
 position = Vector2( 2550.58, 715.768 )
@@ -115,23 +122,28 @@ __meta__ = {
 }
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
+visible = false
 position = Vector2( 982.058, 638.688 )
 scale = Vector2( 0.238607, 0.0794672 )
 
 [node name="Hand" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 630.465, 426.337 )
 
 [node name="Gift" parent="." instance=ExtResource( 7 )]
+visible = false
 position = Vector2( 200.424, 637.094 )
 
 [node name="Gift2" parent="." instance=ExtResource( 7 )]
+visible = false
 position = Vector2( 1797.94, 573.169 )
 
 [node name="Messages" parent="." instance=ExtResource( 10 )]
+visible = false
 position = Vector2( 1821.72, 342.845 )
 
 [node name="Area2D" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2347.35, 504.224 )
+position = Vector2( 2084.99, 119.094 )
 destination = 3
 lvl_item = 3
 
