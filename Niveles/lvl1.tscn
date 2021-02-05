@@ -33,19 +33,17 @@ cell_size = Vector2( 32, 32 )
 tile_data = PoolIntArray( 196610, 0, 0, 196646, 22, 0, 327714, 21, 0, 393223, 1, 0, 393247, 9, 0, 458770, 9, 0, 524300, 2, 0, 524317, 9, 0, 589846, 19, 0, 655393, 17, 0, 786437, 9, 0, 786450, 9, 0, 851976, 4, 0, 917532, 13, 0, 983065, 12, 0, 1114133, 10, 0, 1179682, 15, 0, 1310722, 6, 0, 1310731, 8, 0, 1310747, 14, 0, 1310756, 16, 0, 1376264, 7, 0, 1376280, 11, 0 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 3 )]
 position = Vector2( 123.554, 16.2112 )
 
 [node name="Label" type="Label" parent="."]
-visible = false
 light_mask = 3
-margin_left = 590.127
-margin_top = 227.618
-margin_right = 959.127
-margin_bottom = 308.618
+margin_left = 183.133
+margin_top = 64.4841
+margin_right = 552.133
+margin_bottom = 145.484
 custom_fonts/font = SubResource( 1 )
 text = "Hello friend"
 align = 1
@@ -56,11 +54,10 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-visible = false
-margin_left = 282.0
-margin_top = 325.0
-margin_right = 554.0
-margin_bottom = 416.0
+margin_left = 870.634
+margin_top = 39.5014
+margin_right = 1142.63
+margin_bottom = 130.501
 custom_fonts/font = SubResource( 1 )
 text = "You thought you'd 
 found it, right?"
@@ -71,11 +68,11 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-visible = false
-margin_left = 819.822
-margin_top = 463.18
-margin_right = 1185.82
-margin_bottom = 570.18
+margin_left = 937.727
+margin_top = 362.59
+margin_right = 1237.73
+margin_bottom = 453.59
+rect_rotation = 360.0
 custom_fonts/font = SubResource( 1 )
 text = "Perhaps there's still
 way to go..."
@@ -118,5 +115,5 @@ position = Vector2( 127.423, 577.023 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Area2D2" parent="." instance=ExtResource( 9 )]
-position = Vector2( 1118.49, 108.861 )
+position = Vector2( 1123.54, 520.9 )
 scale = Vector2( 0.5, 0.5 )
