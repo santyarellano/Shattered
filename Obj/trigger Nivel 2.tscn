@@ -14,6 +14,11 @@ animations = [ {
 "name": "body",
 "speed": 5.0
 }, {
+"frames": [  ],
+"loop": true,
+"name": "arm 2",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "arm",
@@ -31,7 +36,8 @@ shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 3.35974, -0.839905 )
+scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
-animation = "body"
+animation = "arm 2"
 [connection signal="area_entered" from="." to="." method="_on_Area2D_area_entered"]
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]

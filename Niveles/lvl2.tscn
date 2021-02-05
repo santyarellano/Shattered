@@ -45,26 +45,7 @@ position = Vector2( -64.7062, 360.588 )
 tile_set = ExtResource( 12 )
 cell_size = Vector2( 32, 32 )
 collision_layer = 2147483649
-tile_data = PoolIntArray( -327615, 13, 0, -196548, 19, 0, -196546, 536870931, 0, -196537, 14, 0, -131040, 9, 0, -130999, 14, 0, -65498, 15, 0, -65479, 18, 0, -65478, 18, 0, -65461, 14, 0, 28, 8, 0, 65571, 9, 0, 65579, 17, 0, 65588, 15, 0, 65613, 15, 0, 131095, 7, 0, 131119, 14, 0, 131137, 10, 0, 196628, 6, 0, 196658, 14, 0, 262158, 4, 0, 262162, 5, 0, 327724, 13, 0, 327739, 15, 0, 393229, 3, 0, 393256, 9, 0, 458754, 0, 0, 458783, 11, 0, 458817, 13, 0, 458831, 0, 0, 524299, 2, 0, 524307, 12, 0, 524315, 9, 0, 524359, 12, 0, 589830, 1, 0, 589878, 1, 0, 655421, 11, 0 )
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 32.0767, 528.344 )
-jump_power = -500
-body_state = 2
-
-[node name="Light2D" parent="Player" index="1"]
-position = Vector2( 1.25992, 2.51984 )
-
-[node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
-position = Vector2( 2550.58, 715.768 )
-
-[node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 19.1596, 548.079 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-volume_db = -11.207
-autoplay = true
+tile_data = PoolIntArray( -327615, 13, 0, -196548, 19, 0, -196546, 536870931, 0, -196537, 14, 0, -131040, 9, 0, -130999, 14, 0, -65498, 15, 0, -65479, 18, 0, -65478, 18, 0, -65461, 14, 0, 28, 8, 0, 65571, 9, 0, 65579, 17, 0, 65588, 15, 0, 65613, 15, 0, 131095, 7, 0, 131119, 14, 0, 131137, 10, 0, 196628, 6, 0, 196658, 14, 0, 262158, 4, 0, 262162, 18, 0, 327739, 15, 0, 393229, 3, 0, 393256, 9, 0, 458754, 0, 0, 458783, 11, 0, 458795, 17, 0, 458817, 13, 0, 458831, 0, 0, 524299, 2, 0, 524307, 12, 0, 524315, 9, 0, 524326, 16, 0, 524335, 18, 0, 524338, 16, 0, 524359, 12, 0, 589830, 1, 0, 589872, 18, 0, 589876, 16, 0, 589878, 1, 0, 655421, 11, 0 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 121.943
@@ -122,9 +103,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 32.0767, 528.344 )
+jump_power = -500
+body_state = 2
+
+[node name="Light2D" parent="Player" index="1"]
+position = Vector2( 1.25992, 2.51984 )
+
+[node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
+position = Vector2( 2550.58, 715.768 )
+
+[node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
+position = Vector2( 19.1596, 548.079 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -11.207
+autoplay = true
+
 [node name="BurningPhotos" parent="." instance=ExtResource( 8 )]
-position = Vector2( 188.248, 638.531 )
-scale = Vector2( 0.140939, 0.0794672 )
+position = Vector2( 187.643, 639.79 )
+scale = Vector2( 0.0968604, 0.0627002 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 1243.87, 546.462 )
@@ -148,7 +148,7 @@ position = Vector2( 1945.77, 114.657 )
 position = Vector2( 711.759, 607.067 )
 
 [node name="Gift3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 904.442, 350.328 )
+position = Vector2( 1007.61, 573.236 )
 
 [node name="Gift2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1665.72, 378.18 )
@@ -176,7 +176,8 @@ position = Vector2( 1723.93, 523.986 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="Messages5" parent="." instance=ExtResource( 10 )]
-position = Vector2( 1544.98, 188.867 )
+position = Vector2( 1556.75, 222.502 )
+scale = Vector2( 0.7, 0.7 )
 
 [node name="Area2D" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2501.52, 508.654 )
