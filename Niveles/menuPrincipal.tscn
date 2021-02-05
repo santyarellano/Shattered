@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Obj/HUD/Pruebas/boton (1).png" type="Texture" id=1]
+[ext_resource path="res://Obj/HUD/Menu.wav" type="AudioStream" id=2]
 [ext_resource path="res://Niveles/Menu/menu.jpg" type="Texture" id=3]
 [ext_resource path="res://Niveles/Control.gd" type="Script" id=4]
 [ext_resource path="res://Obj/HUD/Pruebas/salir.png" type="Texture" id=5]
@@ -28,10 +29,10 @@ __meta__ = {
 }
 
 [node name="Salir" type="TextureButton" parent="Control"]
-margin_left = 15.7592
-margin_top = 12.1497
-margin_right = 209.759
-margin_bottom = 57.1497
+margin_left = 7.82222
+margin_top = 653.459
+margin_right = 201.822
+margin_bottom = 698.459
 rect_min_size = Vector2( 50, 45 )
 texture_normal = ExtResource( 5 )
 expand = true
@@ -62,5 +63,9 @@ rect_clip_content = true
 texture_normal = ExtResource( 1 )
 expand = true
 stretch_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource( 2 )
+volume_db = -13.765
 [connection signal="pressed" from="Control/Salir" to="Control" method="_on_Salir_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Jugar" to="Control" method="_on_Jugar_pressed"]

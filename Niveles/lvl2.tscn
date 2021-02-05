@@ -21,6 +21,7 @@ font_data = ExtResource( 6 )
 [node name="Level_with_lights" type="Node"]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color( 0, 0, 0, 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
