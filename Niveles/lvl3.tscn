@@ -11,8 +11,8 @@
 [ext_resource path="res://Obj/Hazards/Gift.tscn" type="PackedScene" id=9]
 [ext_resource path="res://music/lvl03.wav" type="AudioStream" id=10]
 [ext_resource path="res://Niveles/Font/YuseiMagic-Regular.ttf" type="DynamicFontData" id=11]
-[ext_resource path="res://Obj/Final/nivel6.png" type="Texture" id=12]
-[ext_resource path="res://Obj/Final/Level3/TSlvl3.tres" type="TileSet" id=13]
+[ext_resource path="res://Obj/Final/Level3/TSlvl3.tres" type="TileSet" id=12]
+[ext_resource path="res://Obj/Final/scene_6.png" type="Texture" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -30,19 +30,39 @@ color = Color( 0, 0, 0, 1 )
 show_behind_parent = true
 light_mask = 3
 z_as_relative = false
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 centered = false
 
 [node name="Sprite2" type="Sprite" parent="."]
 show_behind_parent = true
 light_mask = 3
-position = Vector2( 1280.78, 0.309814 )
+position = Vector2( 1280, 0 )
 z_as_relative = false
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
+centered = false
+flip_h = true
+
+[node name="Sprite3" type="Sprite" parent="."]
+visible = false
+show_behind_parent = true
+light_mask = 3
+position = Vector2( 2559.08, 0.0397949 )
+z_as_relative = false
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Sprite4" type="Sprite" parent="."]
+visible = false
+show_behind_parent = true
+light_mask = 3
+position = Vector2( 3838.69, 0.641846 )
+z_as_relative = false
+texture = ExtResource( 3 )
 centered = false
 flip_h = true
 
 [node name="Sprite5" type="Sprite" parent="."]
+visible = false
 show_behind_parent = true
 light_mask = 3
 position = Vector2( 4902.33, 2.92456 )
@@ -55,82 +75,88 @@ position = Vector2( 19, 432.694 )
 jump_power = -550
 body_state = 3
 
-[node name="Light2D" parent="Player" index="1"]
-position = Vector2( 612.37, -351.742 )
-
-[node name="Camera2D" parent="Player" index="2"]
-position = Vector2( 625.083, -349.623 )
-
 [node name="BottomRight" parent="Player/Camera2D/Limits" index="1"]
 position = Vector2( 6175.11, 717.272 )
 
-[node name="AnimatedSprite" parent="Player" index="3"]
-position = Vector2( 627.202, -379.288 )
-
 [node name="TileMap" parent="." instance=ExtResource( 1 )]
-tile_set = ExtResource( 13 )
+tile_set = ExtResource( 12 )
 cell_size = Vector2( 32, 32 )
-tile_data = PoolIntArray( 262163, 3, 0, 327711, 3, 0, 393242, 2, 0, 458775, 1, 0, 655393, 4, 0, 786460, 5, 0, 917529, 6, 0, 1179677, 7, 0 )
+tile_data = PoolIntArray( 196673, 2, 0, 196679, 3, 0, 262178, 5, 0, 262206, 1, 0, 327700, 0, 0, 327718, 2, 0, 327735, 536870914, 0, 393241, 2, 0, 393246, 0, 0, 458768, 5, 0, 458795, 7, 0, 458825, 4, 0, 524334, 9, 0, 524356, 5, 0, 589857, 3, 0, 589889, 3, 0, 655374, 3, 0, 720907, 3, 0, 720916, 14, 0, 720932, 3, 0, 720953, 14, 0, 720959, 6, 0, 786441, 7, 0, 786457, 3, 0, 786472, 10, 0, 851975, 7, 0, 851985, 13, 0, 851996, 3, 0, 852021, 13, 0, 852033, 7, 0, 852034, 7, 0, 917509, 7, 0, 917536, 4, 0, 917548, 2, 0, 917554, 12, 0, 917572, 7, 0, 983040, 5, 0, 983111, 6, 0, 1245259, 8, 0, 1310724, 2, 0, 1310756, 5, 0, 1310767, 11, 0, 1310772, 1073741831, 0, 1310779, 536870923, 0, 1376266, 536870919, 0, 1376268, 536870919, 0, 1376270, 536870919, 0, 1376272, 536870919, 0, 1376274, 536870919, 0, 1376275, 536870919, 0, 1376277, 536870919, 0, 1376279, 536870919, 0, 1376281, 536870919, 0, 1376283, 536870919, 0, 1376284, 536870919, 0, 1376286, 536870919, 0, 1376288, 536870919, 0, 1376290, 536870919, 0, 1376291, 536870919, 0, 1376310, 1073741831, 0, 1376314, 1073741831, 0, 1376325, 536870914, 0, 1441826, 1073741831, 0, 1441827, 1073741831, 0, 1441833, 2, 0, 1441834, 2, 0, 1441848, 1073741831, 0, 1441857, 1073741831, 0, 1441859, 1073741831, 0 )
 
 [node name="PlayerSpawn" parent="." instance=ExtResource( 4 )]
-position = Vector2( 647.26, 71.0598 )
 
 [node name="Mailbox" parent="." instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 539.15, 511.803 )
 letter_speed = -200
 
 [node name="Mailbox3" parent="." instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 4429.8, 575.291 )
 letter_speed = -200
 
 [node name="Mailbox2" parent="." instance=ExtResource( 5 )]
+visible = false
 position = Vector2( 2529.42, 445.876 )
 letter_speed = -200
 
 [node name="Hand" parent="." instance=ExtResource( 8 )]
+visible = false
 position = Vector2( 2268.28, 394.4 )
 
 [node name="Hand2" parent="." instance=ExtResource( 8 )]
+visible = false
 position = Vector2( 4859.37, 333.615 )
 
 [node name="Gift" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 1443.9, 556.498 )
 
 [node name="Gift3" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 2759.26, 559.551 )
 
 [node name="Gift4" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 3661.62, 493.745 )
 scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift5" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 4131.3, 621.95 )
 scale = Vector2( 0.178141, 0.17838 )
 
 [node name="Gift6" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 5324.62, 493.745 )
 scale = Vector2( 0.139004, 0.13919 )
 
 [node name="Gift2" parent="." instance=ExtResource( 9 )]
+visible = false
 position = Vector2( 1576.64, 556.498 )
 
 [node name="BurningPhotos" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 3244.23, 365.354 )
 scale = Vector2( 0.174245, 0.121654 )
 
 [node name="BurningPhotos4" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 934.958, 625.378 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos5" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 1065.96, 628.378 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos6" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 2073.31, 611.839 )
 scale = Vector2( 0.238236, 0.166331 )
 
 [node name="BurningPhotos2" parent="." instance=ExtResource( 6 )]
+visible = false
 position = Vector2( 3929.91, 695.425 )
 scale = Vector2( 0.456076, 0.318422 )
 
@@ -139,21 +165,23 @@ position = Vector2( 4946.06, 636.908 )
 scale = Vector2( 0.177209, 0.115958 )
 
 [node name="Messages" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4278.41, 266.946 )
+position = Vector2( 2154.49, 623.708 )
 scale = Vector2( 0.243366, 0.198921 )
 
 [node name="Messages3" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4278.41, 266.946 )
+position = Vector2( 974.792, 340.677 )
 scale = Vector2( 0.243366, 0.198921 )
 
 [node name="Messages2" parent="." instance=ExtResource( 7 )]
-position = Vector2( 4059.14, 300.356 )
+position = Vector2( 2460.85, 88.6771 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Messages5" parent="." instance=ExtResource( 7 )]
-position = Vector2( 1589.93, 311.669 )
+position = Vector2( 1311.66, 539.997 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Messages4" parent="." instance=ExtResource( 7 )]
-position = Vector2( 2984.79, 206.148 )
+position = Vector2( 1624.34, 113.39 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
@@ -161,10 +189,10 @@ volume_db = -13.897
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
-margin_left = 786.118
-margin_top = 359.28
-margin_right = 1073.12
-margin_bottom = 450.28
+margin_left = 167.021
+margin_top = 217.551
+margin_right = 426.021
+margin_bottom = 355.551
 custom_fonts/font = SubResource( 1 )
 text = "I know it's hard to keep an open heart"
 autowrap = true
@@ -173,10 +201,10 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 1372.16
-margin_top = 372.517
-margin_right = 1659.16
-margin_bottom = 510.517
+margin_left = 779.407
+margin_top = 11.957
+margin_right = 1066.41
+margin_bottom = 149.957
 custom_fonts/font = SubResource( 1 )
 text = "Just try to hang around and see what lies above"
 align = 1
@@ -187,10 +215,10 @@ __meta__ = {
 }
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 2117.03
-margin_top = 396.813
-margin_right = 2452.03
-margin_bottom = 534.813
+margin_left = 1514.93
+margin_top = 262.031
+margin_right = 1826.93
+margin_bottom = 447.031
 custom_fonts/font = SubResource( 1 )
 text = "You wanna be there,
 you wanna see that"
@@ -202,10 +230,10 @@ __meta__ = {
 }
 
 [node name="Label4" type="Label" parent="."]
-margin_left = 3803.8
-margin_top = 381.212
-margin_right = 4429.8
-margin_bottom = 519.212
+margin_left = 1693.11
+margin_top = 473.337
+margin_right = 2262.11
+margin_bottom = 611.337
 custom_fonts/font = SubResource( 1 )
 text = "Just try to piece together conversations."
 align = 1
@@ -216,10 +244,10 @@ __meta__ = {
 }
 
 [node name="Label5" type="Label" parent="."]
-margin_left = 5697.23
-margin_top = 264.136
-margin_right = 6155.23
-margin_bottom = 402.136
+margin_left = 2316.58
+margin_top = 362.728
+margin_right = 2577.58
+margin_bottom = 547.728
 custom_fonts/font = SubResource( 1 )
 text = "At the end you won't be just trying to pretend."
 align = 1
